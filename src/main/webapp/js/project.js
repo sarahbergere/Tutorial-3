@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let matchedProject = projects.find(project => project.id === properName); //checking which project is the same as the one from the URL
 
             if (matchedProject) {
-                $('#headerProject').text(matchedProject.id);
+                $('#title').text(matchedProject.id);
             } else {
                 console.error('Project not found :', properName);
             }

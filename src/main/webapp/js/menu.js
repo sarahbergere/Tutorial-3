@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 projectNumber = (projectNumber.toLowerCase()).split(' ').join('');
                 let h2 = document.createElement("h2");
                 let newProject = document.createElement('a');
-                newProject.setAttribute("href", projectNumber + ".html");
+                newProject.setAttribute("href", projectNumber + ".jsp");
                 newProject.textContent = projectObject.id;
                 h2.append(newProject);
                 idMenu.append(h2);
