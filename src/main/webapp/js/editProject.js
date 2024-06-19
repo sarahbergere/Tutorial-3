@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 projects[number].myPart, projects[number].learned,
                 projects[number].technologies);
 
+            $('#title').text("Edit " + project.id);
+            $('#idProject').val(project.id);
             $('#headerProject').text('Edit ' + project.id);
             $('.title').html('<h1>' + project.title + '</h1>');
 
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateDescriptionDiv();
             });
 
-            $(' #technologies').on('input' , function () {
+            $('#technologies').on('input' , function () {
                 const techArray = $(this).val().split(',').map(tech => tech.trim());
                 const techList = techArray.map(tech => `<li>${tech}</li>`).join('');
                 $('#technologiesList').html(techList);

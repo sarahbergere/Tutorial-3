@@ -3,11 +3,7 @@ html {
     font-family: Verdana;
 }
 
-/*----------------------MAIN PART----------------------------*/
 .central {
-    display: flex;
-    flex-direction: column;    /* this allows for each div to be under the previous one */
-    align-items: center;
     padding: 15px;
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
@@ -28,13 +24,6 @@ img {
     border-radius: 8px;
 }
 
-.resume {
-    width: 80%;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
 .technologies {
     line-height: 1.5;
 }
@@ -47,8 +36,4 @@ img {
     margin: 0 auto;
     display: inline-block;
     text-align: left;
-}
-
-.edit:link, .edit:visited {
-    color: red;
 }

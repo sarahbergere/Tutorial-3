@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    $(".animated").text("Sarah BERGERE");
     $.ajax({
         type: 'GET',
         url: 'ressource/projects.json',
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 li.className = 'myExperience';
                 li.textContent = projectObject.id + ' : ' + projectObject.title + '. ';
                 let learnMore = document.createElement('a');
-                learnMore.href = projectNumber + ".html";
+                learnMore.href = projectNumber + ".jsp";
                 learnMore.textContent = 'Learn more.';
 
                 li.append(learnMore);
