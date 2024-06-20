@@ -12,6 +12,7 @@
 </head>
 <body>
     <%@include file="WEB-INF/includes/titleBar.jsp"%>
+
     <script>
         $(document).ready(function() {
             var projectId = '<c:out value="${project.id}" />';
